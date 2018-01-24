@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 editor.putString("email", email.getText().toString());
                 editor.commit();
 
+
             }
         });
 
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
           public void onClick(View view) {
 
               Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
-              intent.putExtra("sharedpref", "amyrivera91@yahoo.com");
+              intent.putExtra("sharedpref", email.getText().toString());
               startActivity(intent);
           }
       });
